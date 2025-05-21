@@ -31,6 +31,7 @@ function page() {
       }
       alert("OK");
     } catch (error) {
+      alert(error);
       if(error.status===422){
         setErrors(error.response.data.errors);
       }
