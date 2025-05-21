@@ -176,7 +176,7 @@ function page() {
               <td className="px-3 py-2 whitespace-nowrap">                  
                 {product.main_image && (
                     <img
-                      src={`http://127.0.0.1:8000/storage/${product.main_image}`}
+                      src={`${process.env.NEXT_PUBLIC_BACKEND_URL}/${product.main_image}`}
                       alt={product.main_image}
                       className="h-10 w-10 object-cover rounded-full"
                     />
